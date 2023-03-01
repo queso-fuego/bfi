@@ -7,7 +7,7 @@ TARGET = bfi
 
 all: $(TARGET)
 
-bfi: bfi.c
+$(TARGET): bfi.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
